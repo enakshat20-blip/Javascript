@@ -11,8 +11,12 @@ let userEmail;
 
 const id = Symbol('123');
 const anotherid = Symbol('123');
+ 
 
-console.log(id == anotherid)
+console.log(id === anotherid)
+
+id and anotherid is not same although data in both are same because after using symbol this
+make it unique that is why symbol is used 
 
 const Bignumber = 123654786548n
 
