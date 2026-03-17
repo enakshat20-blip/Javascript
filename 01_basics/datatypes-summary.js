@@ -15,8 +15,7 @@ const anotherid = Symbol('123');
 
 console.log(id === anotherid)
 
-id and anotherid is not same although data in both are same because after using symbol this
-make it unique that is why symbol is used 
+//id and anotherid is not same although data in both are same because after using symbol thismake it unique that is why symbol is used 
 
 const Bignumber = 123654786548n
 
@@ -36,3 +35,26 @@ let Myfunction = function(){
 }
 
 console.log(typeof Myfunction);
+
+// static memory(primitive data types) heap memory(non primitive array,obj,fun)
+
+
+let myYoutubename = "Akshat@gmaildotcom"
+anothername = myYoutubename;
+anothername = "akshat"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Akshat@gmail.com"
+ console.log(userOne.email);
+ console.log(userTwo.email);
+ 
